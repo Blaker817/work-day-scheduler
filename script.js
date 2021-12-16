@@ -7,6 +7,7 @@ var timeBlock = $('.time-block')
 
 setColor()
 
+// 
 function setColor() {
     timeBlock.each(function() {
         var hour = $(this).attr('id')
@@ -24,6 +25,7 @@ function setColor() {
     })
 }
 
+// 
 $('.saveBtn').on('click', function(event) {
     event.preventDefault()
     var id = $(this).attr('id')
@@ -34,7 +36,7 @@ $('.saveBtn').on('click', function(event) {
 })
 
 showTasks()
-
+// 
 function showTasks() {
     for (var i = 9; i < 18; i++) {
         var currentTask = localStorage.getItem(i)
